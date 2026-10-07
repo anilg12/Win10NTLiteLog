@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" role="img" aria-label="Kapatilan hizmetlerden bazilari">
+  <title>Kapatılan hizmetler</title>
+  <defs>
+    <clipPath id="frame"><rect width="1200" height="300" rx="18"/></clipPath>
+    <style>
+      .t { font-family: 'Segoe UI', 'Inter', 'Helvetica Neue', Arial, sans-serif; }
+      .m { font-family: Consolas, 'Cascadia Mono', 'SF Mono', Menlo, 'Courier New', monospace; }
+      .track { animation: track 8s ease-in-out infinite; }
+      .knob { animation: knob 8s cubic-bezier(.5,0,.2,1) infinite; }
+      @keyframes track { 0%, 12% { fill: #2F8CFF; } 18%, 88% { fill: #263247; } 94%, 100% { fill: #2F8CFF; } }
+      @keyframes knob { 0%, 12% { transform: translateX(0); } 18%, 88% { transform: translateX(-20px); } 94%, 100% { transform: translateX(0); } }
+      .d1 { animation-delay: 0s; } .d2 { animation-delay: .25s; } .d3 { animation-delay: .5s; } .d4 { animation-delay: .75s; }
+      .d5 { animation-delay: 1s; } .d6 { animation-delay: 1.25s; } .d7 { animation-delay: 1.5s; } .d8 { animation-delay: 1.75s; }
+    </style>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="300" fill="#0A1120"/>
+    <text class="t" x="40" y="48" font-size="20" font-weight="700" fill="#FFFFFF">Kapattığım hizmetlerden bazıları</text>
+    <text class="t" x="40" y="74" font-size="14" fill="#6E86AE">tam liste aşağıda, 44 hizmet</text>
+
+    <!-- row template: card, name, service id, toggle -->
+    <g class="t">
+      <g transform="translate(40 96)">
+        <rect width="545" height="40" rx="10" fill="#0F1A2E" stroke="#1B2B47"/>
+        <text x="16" y="25" font-size="15" fill="#E6EEF9">Bağlı Kullanıcı Deneyimleri ve Telemetri</text>
+        <text class="m" x="470" y="25" font-size="12" text-anchor="end" fill="#56709A">DiagTrack</text>
+        <rect class="track d1" x="487" y="10" width="42" height="20" rx="10"/>
+        <circle class="knob d1" cx="519" cy="20" r="7" fill="#FFFFFF"/>
+      </g>
+      <g transform="translate(615 96)">
+        <rect width="545" height="40" rx="10" fill="#0F1A2E" stroke="#1B2B47"/>
+        <text x="16" y="25" font-size="15" fill="#E6EEF9">Windows Hata Raporlama</text>
+        <text class="m" x="470" y="25" font-size="12" text-anchor="end" fill="#56709A">WerSvc</text>
+        <rect class="track d2" x="487" y="10" width="42" height="20" rx="10"/>
+        <circle class="knob d2" cx="519" cy="20" r="7" fill="#FFFFFF"/>
+      </g>
+      <g transform="translate(40 146)">
+        <rect width="545" height="40" rx="10" fill="#0F1A2E" stroke="#1B2B47"/>
+        <text x="16" y="25" font-size="15" fill="#E6EEF9">Uzak Kayıt Defteri</text>
+        <text class="m" x="470" y="25" font-size="12" text-anchor="end" fill="#56709A">RemoteRegistry</text>
+        <rect class="track d3" x="487" y="10" width="42" height="20" rx="10"/>
+        <circle class="knob d3" cx="519" cy="20" r="7" fill="#FFFFFF"/>
+      </g>
+      <g transform="translate(615 146)">
+        <rect width="545" height="40" rx="10" fill="#0F1A2E" stroke="#1B2B47"/>
+        <text x="16" y="25" font-size="15" fill="#E6EEF9">Coğrafi Konum Hizmeti</text>
+        <text class="m" x="470" y="25" font-size="12" text-anchor="end" fill="#56709A">lfsvc</text>
+        <rect class="track d4" x="487" y="10" width="42" height="20" rx="10"/>
+        <circle class="knob d4" cx="519" cy="20" r="7" fill="#FFFFFF"/>
+      </g>
+      <g transform="translate(40 196)">
+        <rect width="545" height="40" rx="10" fill="#0F1A2E" stroke="#1B2B47"/>
+        <text x="16" y="25" font-size="15" fill="#E6EEF9">Windows Insider Hizmeti</text>
+        <text class="m" x="470" y="25" font-size="12" text-anchor="end" fill="#56709A">wisvc</text>
+        <rect class="track d5" x="487" y="10" width="42" height="20" rx="10"/>
+        <circle class="knob d5" cx="519" cy="20" r="7" fill="#FFFFFF"/>
+      </g>
+      <g transform="translate(615 196)">
+        <rect width="545" height="40" rx="10" fill="#0F1A2E" stroke="#1B2B47"/>
+        <text x="16" y="25" font-size="15" fill="#E6EEF9">Perakende Gösteri Hizmeti</text>
+        <text class="m" x="470" y="25" font-size="12" text-anchor="end" fill="#56709A">RetailDemo</text>
+        <rect class="track d6" x="487" y="10" width="42" height="20" rx="10"/>
+        <circle class="knob d6" cx="519" cy="20" r="7" fill="#FFFFFF"/>
+      </g>
+      <g transform="translate(40 246)">
+        <rect width="545" height="40" rx="10" fill="#0F1A2E" stroke="#1B2B47"/>
+        <text x="16" y="25" font-size="15" fill="#E6EEF9">Windows Mobil Etkin Nokta</text>
+        <text class="m" x="470" y="25" font-size="12" text-anchor="end" fill="#56709A">icssvc</text>
+        <rect class="track d7" x="487" y="10" width="42" height="20" rx="10"/>
+        <circle class="knob d7" cx="519" cy="20" r="7" fill="#FFFFFF"/>
+      </g>
+      <g transform="translate(615 246)">
+        <rect width="545" height="40" rx="10" fill="#0F1A2E" stroke="#1B2B47"/>
+        <text x="16" y="25" font-size="15" fill="#E6EEF9">Program Uyumluluk Yardımcısı</text>
+        <text class="m" x="470" y="25" font-size="12" text-anchor="end" fill="#56709A">PcaSvc</text>
+        <rect class="track d8" x="487" y="10" width="42" height="20" rx="10"/>
+        <circle class="knob d8" cx="519" cy="20" r="7" fill="#FFFFFF"/>
+      </g>
+    </g>
+  </g>
+</svg>
